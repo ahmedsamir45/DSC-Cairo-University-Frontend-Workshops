@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+  --primary-color: #0ea5e9;
+  --text-color: #333;
+  --font:   sans-serif;
+;
+  --green:rgb(23, 251, 23);
+  --blue:rgb(2, 79, 173);
+}
+
+body{
+    font-family: var(--font);
+}
+
+.landing{
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(0, 191, 169), rgb(212, 43, 241));
+   
+    overflow: hidden;
+
+}
+.landing .container{
+  margin-top: 20px;
+}
+.landing h1,.landing p{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+ 
+}
+
+.landing p{
+    box-shadow: 5px 5px 10px 4px black ;
+}
+.landing h1{
+    text-shadow: 5px 5px 5px  black;
+    font-weight:100;
+
+}
+.btn{
+    display: block;
+    padding: 5px;
+    border-radius: 50px;
+    border: none;
+    margin: 10px;
+}
+.bg-green{
+    background-color: var(--green);
+    color: white;
+}
+.bg-blue{
+    background-color: var(--blue);
+    color: white;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content:center;
+}
+.cards .card{
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+.cards .card .warraper-img{
+    width: fit-content;
+}
+
+.cards{
+    margin: 10px;
+    padding: 2%;
+}
+.cards .card .warraper-img img{
+    width: 100%;
+}
+.cards .card .text-card{
+    padding: 10px;
+}

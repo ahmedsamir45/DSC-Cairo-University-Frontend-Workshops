@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta info for character encoding and mobile responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSC</title>
+</head>
+<body>
+
+    <!-- INTRO BLOCK 1 -->
+    <div class="intro" id="block1" title="intro">
+        <!-- Headings from h1 (largest) to h6 (smallest) -->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+
+        <!-- Paragraphs -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ut quas illum eveniet incidunt recusandae voluptas assumenda dolores aperiam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, id.</p>
+    </div>
+
+    <!-- INTRO BLOCK 2 -->
+    <div class="intro" id="block2">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ut quas illum eveniet incidunt recusandae voluptas assumenda dolores aperiam!</p>
+
+        <!-- Span: inline container -->
+        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, id.</span>
+    </div>
+
+    <!-- Multiple span elements inline -->
+    <span>afafa</span>
+    <span>hello</span>
+
+    <!-- Anchor link: opens in new tab -->
+    <a href="ahmed_samir_resume.pdf" target="_blank">Open Resume</a>
+
+    <!-- Image with title tooltip and alternative text -->
+    <img title="intro" src="image.png" alt="messi">
+
+    <!-- Unordered List (type can be disc, circle, square) -->
+    <ul type="circle">
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+    </ul>
+
+    <!-- Ordered List (type="i" for lowercase Roman numerals) -->
+    <ol type="i">
+        <li>Test</li>
+        <li>Test</li>
+        <li>Test</li>
+    </ol>
+
+    <!-- First Table Example -->
+    <table border="1">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <!-- rowspan merges cells vertically -->
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+            <!-- colspan merges cells horizontally -->
+            <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+    </table>
+
+    <!-- Horizontal Rule (divider) -->
+    <hr>
+
+    <!-- Text Formatting -->
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+    <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, tempora.
+    </span>
+    <br>
+    <span>
+        Lorem ipsum dolor <del>test</del> sit amet <strong>test</strong> consectetur <small>test</small> adipisicing elit. Iusto, tempora.
+    </span>
+    <!-- Subscript & Superscript -->
+    H<sub>2</sub>O, x<sup>2</sup>
+
+    <!-- Semantic HTML5 Elements -->
+    <article>
+        <!-- Independent self-contained content -->
+    </article>
+    <aside>
+        <!-- Side info, ads, related links -->
+    </aside>
+    <header>
+        <!-- Top section for titles/logos -->
+    </header>
+    <nav>
+        <!-- Navigation links -->
+    </nav>
+
+    <!-- Inline frame: embed another HTML page -->
+    <iframe src="test.html"></iframe>
+
+    <!-- YouTube Video Embed -->
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/HsG5GxcR1qc?si=1RPEeG8ztVNZQoSq"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+
+    <!-- Special HTML entities -->
+    <div>
+        &lt; &gt; <!-- Displays < and > -->
+    </div>
+
+    <!-- Second Table Example -->
+    <table border="1">
+        <tr>
+            <th>Team</th>
+            <th>Player</th>
+            <th colspan="2">Statistics</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Team A</td>
+            <td>Player 1</td>
+            <td>Goals 4</td>
+            <td>Assists 7</td>
+        </tr>
+        <tr>
+            <td>Player 2</td>
+            <td>Goals 6</td>
+            <td>Assists 5</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Team B</td>
+            <td>Player 1</td>
+            <td>Goals 4</td>
+            <td>Assists 7</td>
+        </tr>
+        <tr>
+            <td>Player 2</td>
+            <td>Goals 6</td>
+            <td>Assists 5</td>
+        </tr>
+    </table>
+
+    <!-- Form -->
+    <form onsubmit="window.location.href='thank.html'; return false;" method="post">
+        <!-- Input fields -->
+        <input required type="text" name="name" placeholder="Name"><br>
+        <input required type="text" name="surname" placeholder="Surname"><br>
+        <input required autofocus type="text" name="email" placeholder="Email"><br>
+
+        <!-- Submit and Reset buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+</html>

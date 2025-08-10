@@ -1,0 +1,74 @@
+/* 
+
+#unique{
+    background-color: yellow;
+    color: green;
+}
+.arabic{
+    background-color: black;
+    color: white;
+}
+p{
+    
+    background-color:aqua ;
+    color: red;
+}
+
+.test1 li{
+    color: aqua;
+}
+ */
+
+ /* rgp rgpa hex words  */
+
+/* body{
+    background-image: url("../assets/image.png");
+    background-size: cover;
+} */
+
+/* p{
+    
+    padding: 100px;
+    padding: 100px 200px 300px 400px;
+    padding: 100px 200px ;
+
+    width: 500px;
+    background-color: red;
+
+    margin: 100px;
+} */
+
+
+
+/* .class #id tag
+-width - height -color -background -padding -margin */
+
+/* p{
+    margin: 100px; 
+    margin: 100px 200px 300px 400px;
+    margin: 100px 200px ; 
+    color: black;
+    border: 5px dotted green;
+    border-bottom: 1px dashed red;
+    border-top: 5px solid green;
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p{
+    background-color: red;
+}
+.div1{
+    border: 2px solid black;
+    width: 400px;
+}
+.div2{
+    box-sizing: border-box;
+    padding: 50px;
+    width:400px;
+    background-color: red;
+    margin: 50px;
+}

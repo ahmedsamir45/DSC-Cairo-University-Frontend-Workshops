@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: yellow;
+
+}
+a{
+    text-decoration: none;
+}
+#test{
+    background-color: aqua;
+     transition: all 2s linear 1s;
+}
+.tabs{
+    display:inline-block ;
+    width: 20%;
+    margin-right: 4%;
+    margin-top:-150px ;
+    line-height:3;
+}
+main{
+    display: inline-block;
+    width: 70%;
+    color: blueviolet;
+    margin-top: 3%;
+}
+
+.pargraphs{
+    border-bottom: 1px dashed blueviolet;
+    margin-bottom: 3%;
+}
+.pargraphs p{
+    
+    margin: 3% auto;
+}
+
+.tabs ul li {
+    margin: 3%;
+    padding: 5px;
+    background-color: white;
+    border-right: 14px solid black;
+}
+
+.tabs ul li a{
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.test-container{
+    width: 200px;
+    background-color: wheat;
+}
+
+/* rem em vw vh */
+
+/* .units{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    width: 10%;
+    height: 200px;
+    margin-left: 20px;
+} */
+
+
+/* rem = 16px */
+
+
+.units{
+    background-color: aqua;
+    height: 100vh;
+    width: 100vw;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
