@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animations & Transitions Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f0f0f0;
+      padding: 30px;
+    }
+
+    .box {
+      width: 140px;
+      height: 140px;
+      background: #4a90e2;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    /* 🔹 Transition Example */
+    .transition-box:hover {
+      transform: scale(1.2);
+      background: #e94e77;
+      transition: all 0.5s ease;
+    }
+
+    /* 🔹 Hover Animation Example (Bounce) */
+    @keyframes bounce {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-25px); }
+      100% { transform: translateY(0); }
+    }
+    .animation-box:hover {
+      animation: bounce 0.6s ease infinite;
+      background: #34a853;
+    }
+
+    /* 🔹 Hover Transform (Scale + Rotate) */
+    .hover-box:hover {
+      transform: scale(1.2) rotate(10deg);
+      background: #ff6f61;
+      transition: transform 0.4s ease;
+    }
+
+    /* 🔹 Page Load Animation (Slide In Once) */
+    @keyframes slideIn {
+      0% { transform: translateY(-150px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    .page-load {
+      animation: slideIn 1.5s ease-out forwards;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Transition Example -->
+  <div class="box transition-box">Transition</div>
+
+  <!-- Hover Animation Example -->
+  <div class="box animation-box">Hover<br>Animation</div>
+
+  <!-- Hover Transform Example -->
+  <div class="box hover-box">Hover<br>Transform</div>
+
+  <!-- Page Load Animation -->
+  <div class="box page-load">Page<br>Load</div>
+
+</body>
+</html>

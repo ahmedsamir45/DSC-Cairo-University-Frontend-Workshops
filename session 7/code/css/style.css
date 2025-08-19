@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-columns:auto 1fr;
+    grid-template-rows: 200px 200px 200px;
+    background-color: red;
+
+}
+.item{
+    background-color: blue;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+ */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .item{
+    animation-name: change-background;
+    animation-duration: 5s;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 10px;
+    /* animation-delay: 1s; */
+    animation-iteration-count: 2;
+    animation-direction:normal;
+    animation-fill-mode:forwards;
+    animation-timing-function:ease;
+    animation-play-state: running;
+     /* animation: slideIn 2s ease-in-out 1s 3 alternate forwards running; */
+
+ }
+
+ .item:hover{
+    animation-play-state: paused;
+ }
+
+@keyframes change-background {
+    0%{
+        background-color: red;
+        transform: scale(1.4);
+    }
+    /* 30%{
+        background-color: aqua;
+        transform: scale(1.4);
+    }
+    60%{
+        background-color: black;
+        color: white;
+        transform: translateX(20px);
+    } */
+    100%{
+        background-color: blue;
+    }
+}
+
+/* .item{
+    background-color: aqua;
+    width: fit-content;
+    padding: 10px;
+    margin-left: 10px;
+    animation-name: movement;
+    animation-duration: 1s;
+    transition: all 0.2s;
+     animation-timing-function:linear;
+    animation-play-state:running;
+     animation: slideIn 2s ease-in-out 1s 3 alternate forwards running;
+
+} */
+@keyframes movement {
+    0%{
+        width: fit-content;
+    }
+    100%{
+        width: 100%;
+    }
+}

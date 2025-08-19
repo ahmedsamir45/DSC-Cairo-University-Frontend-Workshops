@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple CSS Grid - fr vs auto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    .container {
+      display: grid;
+      gap: 10px;
+      padding: 10px;
+      margin-bottom: 40px;
+    }
+
+    .item {
+      background: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+      border-radius: 8px;
+    }
+
+
+    .fr-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    .auto-grid {
+      grid-template-columns: 1fr auto auto;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="container fr-grid">
+    <div class="item">Short</div>
+    <div class="item">A bit longer text</div>
+    <div class="item">This is a very very long text item</div>
+  </div>
+
+
+  <div class="container auto-grid">
+    <div class="item">Short</div>
+    <div class="item">A bit longer text</div>
+    <div class="item">This is a very very long text item</div>
+  </div>
+
+</body>
+</html>
